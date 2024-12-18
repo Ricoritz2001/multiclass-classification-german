@@ -1,0 +1,17 @@
+# Requirements
+
+# Core Dependencies:
+pandas                 # For handling and manipulating data
+numpy                  # For numerical computations
+scikit-learn           # Classical ML models and utilities (Logistic Regression, RandomForest, SVM, KNN)
+xgboost                # XGBoost model implementation
+joblib                 # For saving and loading trained models and encoders
+
+# Text Preprocessing:
+nltk                   # Natural Language Toolkit for text preprocessing and stopwords
+
+# Hugging Face and PyTorch for Transformer Models:
+transformers           # Hugging Face Transformers library for state-of-the-art models
+datasets               # Hugging Face Datasets for managing the training/evaluation data
+evaluate               # Hugging Face Evaluate library for metric computations
+torch                  # PyTorch for model training (CPU/GPU)
