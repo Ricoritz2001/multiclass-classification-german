@@ -50,6 +50,8 @@ German-News-Data-Classification/
 │  ├─ train_transformer_models.py
 │  ├─ evaluate_models.py
 │  └─ utils.py
+├─ News Classification.ipynb
+├─ test_using_colab.ipynb
 ├─ README.md
 └─ requirements.txt
 ```
