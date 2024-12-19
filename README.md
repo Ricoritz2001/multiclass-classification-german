@@ -73,11 +73,11 @@ German-News-Data-Classification/
    ```
 2. Navigate to the project directory:
    ```bash
-cd German-News-Data-Classification
+   cd German-News-Data-Classification
    ```
 3. NInstall the required dependencies:
    ```bash
-pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 4. (Optional) To utilize GPU acceleration for training transformer models, ensure you have CUDA and PyTorch GPU version installed.
    
@@ -158,3 +158,6 @@ print(predicted_labels)
 - Changing the number of classes: Update **`top_n=30`** in **`train_classical_models.py`** or **`train_transformer_models.py`**.
 - Modifying the transformer model: Change **`model_name`** in **`train_transformer_models.py`** to a different Hugging Face model.
 - Adjusting hyperparameters: Modify TF-IDF parameters, model hyperparameters, or training arguments in the respective scripts.
+
+## Testing Using colab
+We have added the file **`test_using_colab.ipynb`**. Which can be uploaded to the colab. Either train the models from scratch or otherwise just use the pretrain models to test and predict the categories.
