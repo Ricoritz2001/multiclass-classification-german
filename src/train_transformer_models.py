@@ -41,7 +41,9 @@ def main():
     train_ds = train_ds.map(encode_labels, batched=True)
     test_ds = test_ds.map(encode_labels, batched=True)
 
-    # Choose a model name
+    # Choose a model name 
+    # - xlm-roberta-base
+    # - distilbert-base-german-cased
     model_name = "xlm-roberta-base"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 

@@ -55,8 +55,6 @@ def main():
     X_train_filtered, y_train_filtered, X_test_filtered, y_test_filtered = filter_top_classes(X_train, y_train, X_test, y_test, top_n=30)
 
     # Load TF-IDF and label encoder that was used during training classical models
-    # For simplicity, we can re-run TF-IDF vectorization here if you like, or store the TfidfVectorizer using joblib.
-    # Assuming we just replicate steps (In a real scenario, you'd save the tfidf model).
     from sklearn.feature_extraction.text import TfidfVectorizer
     from nltk.corpus import stopwords
     import nltk
