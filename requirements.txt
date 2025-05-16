@@ -9,9 +9,19 @@ joblib                 # For saving and loading trained models and encoders
 
 # Text Preprocessing:
 nltk                   # Natural Language Toolkit for text preprocessing and stopwords
+spacy                  # NLP pipeline used in classical models
+wordcloud              # For generating word cloud visualizations
 
 # Hugging Face and PyTorch for Transformer Models:
-transformers           # Hugging Face Transformers library for state-of-the-art models
+transformers[torch]    # Hugging Face Transformers library for state-of-the-art models
 datasets               # Hugging Face Datasets for managing the training/evaluation data
 evaluate               # Hugging Face Evaluate library for metric computations
 torch                  # PyTorch for model training (CPU/GPU)
+torchaudio             # PyTorch audio utilities (required in conda setup)
+torchvision            # PyTorch vision utilities (used in conda setup)
+tensorflow             # For certain transformer-based models, optional backend
+tf-keras               # Ensures compatibility with Hugging Face when using TensorFlow
+
+# Visualization:
+matplotlib             # For plotting and visualization
+seaborn                # For enhanced statistical plotting

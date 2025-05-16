@@ -1,0 +1,28 @@
+Miniconda is a small version of Anaconda, with python 3.9, https://docs.conda.io/en/latest/miniconda.html
+prepending to __UENV: miniconda3-py39
+prepending to PATH: /opt/miniconda39/bin
+prepending to LD_LIBRARY_PATH: /opt/miniconda39/lib
+prepending to LD_LIBRARY_PATH: /usr/lib64/openmpi/lib
+sourcing environment file /opt/miniconda39/etc/profile.d/conda.sh
+
+
+Requirement already satisfied: matplotlib in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (3.10.1)
+Requirement already satisfied: seaborn in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (0.13.2)
+Requirement already satisfied: scikit-learn in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (1.6.1)
+Requirement already satisfied: contourpy>=1.0.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (1.4.8)
+Requirement already satisfied: numpy>=1.23 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (2.1.3)
+Requirement already satisfied: packaging>=20.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (24.2)
+Requirement already satisfied: pillow>=8 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (11.1.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (2.9.0.post0)
+Requirement already satisfied: pandas>=1.2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from seaborn) (2.2.3)
+Requirement already satisfied: scipy>=1.6.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (1.15.2)
+Requirement already satisfied: joblib>=1.2.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (1.4.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (3.6.0)
+Requirement already satisfied: pytz>=2020.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pandas>=1.2->seaborn) (2025.1)
+Requirement already satisfied: tzdata>=2022.7 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pandas>=1.2->seaborn) (2025.2)
+Requirement already satisfied: six>=1.5 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib) (1.17.0)
+slurmstepd: error: *** JOB 407148 ON gorina41 CANCELLED AT 2025-05-16T12:26:41 ***

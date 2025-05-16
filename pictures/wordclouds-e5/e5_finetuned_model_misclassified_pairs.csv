@@ -1,0 +1,29 @@
+True Label,Predicted Label,Count
+IT und digitalisierung,social media,307
+gesellschaft und leben,kultur und unterhaltung,313
+gesellschaft und leben,social media,386
+gesundheit,bildung,253
+gesundheit,wissenschaft,413
+klima und umwelt,tiere,348
+klima und umwelt,wetter,465
+konflikte und krieg,militaer,804
+kultur und unterhaltung,gesellschaft und leben,335
+kultur und unterhaltung,medien,423
+militaer,konflikte und krieg,710
+politik,gesundheit,298
+politik,konflikte und krieg,471
+politik,militaer,287
+politik,wirtschaft,255
+polizei und kriminalitaet,recht,663
+polizei und kriminalitaet,unfall und notfaelle,471
+polizei und kriminalitaet,verkehr,471
+recht,polizei und kriminalitaet,293
+social media,IT und digitalisierung,265
+unfall und notfaelle,verkehr,417
+unfall und notfaelle,wetter,414
+verkehr,polizei und kriminalitaet,369
+verkehr,unfall und notfaelle,829
+wetter,klima und umwelt,256
+wissenschaft,bildung,296
+wissenschaft,gesundheit,283
+wissenschaft,klima und umwelt,290

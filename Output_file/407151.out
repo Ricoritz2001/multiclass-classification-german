@@ -1,0 +1,388 @@
+Miniconda is a small version of Anaconda, with python 3.9, https://docs.conda.io/en/latest/miniconda.html
+prepending to __UENV: miniconda3-py39
+prepending to PATH: /opt/miniconda39/bin
+prepending to LD_LIBRARY_PATH: /opt/miniconda39/lib
+prepending to LD_LIBRARY_PATH: /usr/lib64/openmpi/lib
+sourcing environment file /opt/miniconda39/etc/profile.d/conda.sh
+
+
+Requirement already satisfied: matplotlib in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (3.10.1)
+Requirement already satisfied: seaborn in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (0.13.2)
+Requirement already satisfied: scikit-learn in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (1.6.1)
+Requirement already satisfied: contourpy>=1.0.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (1.4.8)
+Requirement already satisfied: numpy>=1.23 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (2.1.3)
+Requirement already satisfied: packaging>=20.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (24.2)
+Requirement already satisfied: pillow>=8 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (11.1.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (2.9.0.post0)
+Requirement already satisfied: pandas>=1.2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from seaborn) (2.2.3)
+Requirement already satisfied: scipy>=1.6.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (1.15.2)
+Requirement already satisfied: joblib>=1.2.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (1.4.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (3.6.0)
+Requirement already satisfied: pytz>=2020.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pandas>=1.2->seaborn) (2025.1)
+Requirement already satisfied: tzdata>=2022.7 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pandas>=1.2->seaborn) (2025.2)
+Requirement already satisfied: six>=1.5 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib) (1.17.0)
+Using spaCy (FastText) embeddings...
+
+Classification Report for ./models/logistic_regression_model_FastText.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.57      0.59      0.58      5000
+                  bildung       0.62      0.65      0.63      5000
+   gesellschaft und leben       0.37      0.27      0.31      5000
+               gesundheit       0.44      0.43      0.43      5000
+         klima und umwelt       0.45      0.43      0.44      5000
+      konflikte und krieg       0.47      0.54      0.50      5000
+  kultur und unterhaltung       0.46      0.41      0.43      5000
+                   medien       0.57      0.51      0.54      5000
+                 militaer       0.54      0.52      0.53      4859
+                  politik       0.35      0.32      0.33      5000
+polizei und kriminalitaet       0.45      0.40      0.42      5000
+                    recht       0.55      0.60      0.57      5000
+             social media       0.48      0.51      0.50      5000
+                    sport       0.73      0.85      0.79      5000
+                    tiere       0.67      0.72      0.69      4961
+     unfall und notfaelle       0.48      0.52      0.50      5000
+                  verkehr       0.42      0.34      0.38      5000
+                   wetter       0.68      0.73      0.70      5000
+               wirtschaft       0.49      0.58      0.53      5000
+             wissenschaft       0.50      0.50      0.50      5000
+
+                 accuracy                           0.52     99820
+                macro avg       0.51      0.52      0.52     99820
+             weighted avg       0.51      0.52      0.52     99820
+
+
+Confusion Matrix for ./models/logistic_regression_model_FastText.joblib:
+[[2965  145   49  102   67   34   81  117   67   80   66   90  323   36
+    40   29   92   24  377  216]
+ [ 101 3251  153  190  127   19  134   45   21  137  102   69   66   49
+    33   24   57   18  171  233]
+ [ 100  260 1326  268  188   52  637  230   39  102  126  159  580  191
+   119   82   81   86  183  191]
+ [ 116  241  211 2159  103   58  106   73   53  277   92  116  151  162
+    63   62   63   70  322  502]
+ [  51   86  111   73 2172   58   76   54   23  215   74   82   49   34
+   458  147  152  457  260  368]
+ [  24   51   34   46   90 2678   47   44 1035  385   66   88   59   32
+     9   55   25   22  164   46]
+ [  84   91  393  176   79   33 2046  487   53   98  156  119  431   89
+    74  207   92   78  103  111]
+ [ 353   58  181   77   47   79  420 2537   44  215   54  101  274  295
+    29    9   12   14  131   70]
+ [  53   17   25   47   26 1293   39   38 2545  327   42  104   50   16
+    20   54   29   37   55   42]
+ [  59  196  111  387  209  684   87  136  477 1602   97  204  115   61
+    23   44   59   32  315  102]
+ [  70   88   76  100   58   68   53   50   61  152 2002  833   86   55
+   139  493  506   35   50   25]
+ [  84   72   51  120   97  193   61   48   67  332  324 3021  108   52
+    52   66   71   17  138   26]
+ [ 429   62  220  115   36   85  234  256   67  170   96  109 2554  203
+   107   47   37   22   70   81]
+ [  14   24  115   58   15   14   58   90    9   40   21   28  114 4255
+    24   21   27   27   26   20]
+ [  27   20   81   70  295   14   57   34   12   33   92   84   87   38
+  3563  128   60   50   38  178]
+ [  25   50   58  140  125  109   51   15   47   56  252   79   60   20
+   153 2621  621  402   41   75]
+ [ 135   63   86   66  167   33   65   19   47   60  720   85   56   49
+    95 1012 1694  158  355   35]
+ [  22   31   49   52  266   26   46   21   13   43   34   17   34   67
+    57  274  139 3634   72  103]
+ [ 324  160  186  158  260   71   49   87   40  183   27   97   48   52
+    30   27  167   39 2888  107]
+ [ 185  304  100  540  398   40  113   70   34   90    9   30   36   35
+   230   29   23  140  100 2494]]
+LogisticRegression (FastText) Accuracy: 0.5210078140653176
+
+Classification Report for ./models/random_forest_model_FastText.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.44      0.52      0.48      5000
+                  bildung       0.47      0.54      0.50      5000
+   gesellschaft und leben       0.33      0.24      0.28      5000
+               gesundheit       0.30      0.21      0.25      5000
+         klima und umwelt       0.36      0.26      0.30      5000
+      konflikte und krieg       0.41      0.51      0.45      5000
+  kultur und unterhaltung       0.35      0.30      0.33      5000
+                   medien       0.43      0.40      0.42      5000
+                 militaer       0.50      0.46      0.48      4859
+                  politik       0.27      0.25      0.26      5000
+polizei und kriminalitaet       0.32      0.31      0.31      5000
+                    recht       0.48      0.54      0.51      5000
+             social media       0.38      0.46      0.42      5000
+                    sport       0.65      0.73      0.69      5000
+                    tiere       0.54      0.50      0.52      4961
+     unfall und notfaelle       0.40      0.48      0.43      5000
+                  verkehr       0.32      0.21      0.25      5000
+                   wetter       0.58      0.64      0.61      5000
+               wirtschaft       0.35      0.42      0.38      5000
+             wissenschaft       0.38      0.43      0.41      5000
+
+                 accuracy                           0.42     99820
+                macro avg       0.41      0.42      0.41     99820
+             weighted avg       0.41      0.42      0.41     99820
+
+
+Confusion Matrix for ./models/random_forest_model_FastText.joblib:
+[[2604  159   63  100   74   74  106  155   54  112   63   77  366   65
+    64   29   57   48  460  270]
+ [ 145 2677  204  227   86   51  113   64   31  171  184  116  127   62
+    71   54   67   49  194  307]
+ [ 161  318 1193  194  143   54  547  250   40  117  148  151  632  186
+   150   94   67  122  177  256]
+ [ 233  462  161 1032  143  122  125  148   69  299  127  168  213  163
+   136  131  100  125  422  621]
+ [ 144  177  134  110 1305  119  116   98   50  280   95  103  100   72
+   404  164  119  533  430  447]
+ [  44   56   39   60   60 2534   66   70 1035  352   75  125   86   34
+    30   63   30   43  154   44]
+ [ 120  152  408  144   77   56 1519  464   32  134  146  135  580  169
+   118  231   96  104  135  180]
+ [ 389   93  166   86   56  109  446 1996   51  234   64  135  408  345
+    44   25   12   25  192  124]
+ [  51   42   44   62   36 1393   40   62 2223  303   80  113   77   28
+    30   55   39   38   87   56]
+ [ 127  279   96  230  131  795  118  197  384 1234  105  222  150  104
+    41   65   48   58  445  171]
+ [  72   89   71   79   49  122   59   81   65  146 1548  849  133   68
+   162  681  510   95   69   52]
+ [  89   75   53   88   58  211   60   94  106  242  543 2694  166   70
+   100   96   79   17  118   41]
+ [ 507   71  236   80   32   96  307  264   80  151  106  128 2324  199
+   111   42   39   37   83  107]
+ [  64   51  154   56   28   25  156  215   19   73   25   49  186 3639
+    22   36   31   34   77   60]
+ [  67   69  131  105  268   29  116   74   11   63  257  141  216   50
+  2503  260  155  124   79  243]
+ [  29   62   54   97  119  103   47   28   46   61  454  101   70   31
+   178 2387  553  413   64  103]
+ [ 240  142   72  108  143   56   69   42   33   96  720  134   81   63
+   139 1141 1056  212  378   75]
+ [  57   46   66   68  336   49   46   44   22   39   67   20   76   73
+    94  366  140 3176   95  120]
+ [ 473  260  151  195  215  116  106  135   79  321   48  107   89   86
+    44   42  109   75 2106  243]
+ [ 296  373   95  300  287   70  182  119   48  137   31   50   94   63
+   184   55   26  167  248 2175]]
+RandomForest (FastText) Accuracy: 0.42000601081947503
+
+Classification Report for ./models/xgboost_model_FastText.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.54      0.56      0.55      5000
+                  bildung       0.60      0.63      0.61      5000
+   gesellschaft und leben       0.37      0.29      0.32      5000
+               gesundheit       0.40      0.37      0.38      5000
+         klima und umwelt       0.44      0.41      0.42      5000
+      konflikte und krieg       0.48      0.54      0.51      5000
+  kultur und unterhaltung       0.42      0.39      0.41      5000
+                   medien       0.53      0.49      0.51      5000
+                 militaer       0.55      0.54      0.55      4859
+                  politik       0.33      0.33      0.33      5000
+polizei und kriminalitaet       0.39      0.39      0.39      5000
+                    recht       0.54      0.59      0.57      5000
+             social media       0.46      0.48      0.47      5000
+                    sport       0.74      0.80      0.77      5000
+                    tiere       0.65      0.67      0.66      4961
+     unfall und notfaelle       0.46      0.49      0.48      5000
+                  verkehr       0.39      0.35      0.37      5000
+                   wetter       0.67      0.69      0.68      5000
+               wirtschaft       0.47      0.51      0.49      5000
+             wissenschaft       0.48      0.49      0.49      5000
+
+                 accuracy                           0.50     99820
+                macro avg       0.50      0.50      0.50     99820
+             weighted avg       0.50      0.50      0.50     99820
+
+
+Confusion Matrix for ./models/xgboost_model_FastText.joblib:
+[[2800  154   67  101   57   40  106  144   56   92   71   74  379   35
+    32   30  138   29  368  227]
+ [ 116 3128  160  246  102   27  108   37   26  162  134   73   73   47
+    32   24   75   22  146  262]
+ [  98  232 1459  241  161   48  564  257   33  139  142  155  569  154
+   114   83   91   85  190  185]
+ [ 158  297  217 1835   93   69  124  105   52  371  128  123  153  128
+    75   64  102   69  321  516]
+ [  70  102  124   85 2026   70  101   61   32  249   77   90   54   33
+   453  141  140  449  291  352]
+ [  25   33   38   60   80 2679   53   52 1024  409   64   97   53   25
+    18   52   40   23  145   30]
+ [  86  105  456  184   90   35 1944  488   33  115  161  113  435   95
+    70  200   92   78  102  118]
+ [ 319   63  178   82   53   79  472 2458   51  226   71  107  287  253
+    31   12   18   13  146   81]
+ [  42   23   27   66   31 1180   41   38 2644  304   65   92   60   18
+    21   42   37   39   50   39]
+ [  83  185  118  314  202  667  108  140  414 1651  117  222  116   60
+    23   47   66   30  312  125]
+ [  77   80   70   90   44   69   53   74   55  161 1951  774   83   47
+   168  524  569   36   49   26]
+ [  57   75   58  102   62  187   60   53   86  253  545 2953  104   51
+    53   62   71   16  124   28]
+ [ 458   53  253  100   38   73  283  303   78  173  121  107 2419  182
+   108   42   46   25   61   77]
+ [  33   36  170   81   19   19  101  157   10   54   21   38  128 3977
+    20   16   30   25   42   23]
+ [  27   36  100   90  286   17   70   35    2   48  142   94  119   36
+  3330  150   97   59   38  185]
+ [  32   42   59  121  146  101   62   17   51   62  317   81   50   29
+   168 2472  710  379   37   64]
+ [ 142   66   73   73  150   25   82   16   41   90  724  107   57   42
+   114  954 1735  155  321   33]
+ [  30   33   57   54  342   28   44   31   15   46   45   15   48   54
+    75  338  140 3431   65  109]
+ [ 375  178  191  173  250   68   75  100   44  261   30  103   71   49
+    25   38  214   45 2571  139]
+ [ 182  329  113  462  395   54  132   82   31  114   17   30   39   40
+   202   32   23  133  148 2442]]
+XGBoost (FastText) Accuracy: 0.4999499098377079
+
+Classification Report for ./models/knn_model_FastText.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.40      0.44      0.42      5000
+                  bildung       0.37      0.52      0.43      5000
+   gesellschaft und leben       0.24      0.31      0.27      5000
+               gesundheit       0.24      0.31      0.27      5000
+         klima und umwelt       0.29      0.30      0.29      5000
+      konflikte und krieg       0.34      0.56      0.42      5000
+  kultur und unterhaltung       0.31      0.24      0.27      5000
+                   medien       0.30      0.41      0.35      5000
+                 militaer       0.42      0.47      0.44      4859
+                  politik       0.25      0.14      0.18      5000
+polizei und kriminalitaet       0.33      0.33      0.33      5000
+                    recht       0.46      0.50      0.48      5000
+             social media       0.41      0.33      0.36      5000
+                    sport       0.73      0.64      0.68      5000
+                    tiere       0.52      0.46      0.49      4961
+     unfall und notfaelle       0.41      0.43      0.42      5000
+                  verkehr       0.35      0.19      0.24      5000
+                   wetter       0.61      0.62      0.62      5000
+               wirtschaft       0.41      0.27      0.33      5000
+             wissenschaft       0.47      0.28      0.35      5000
+
+                 accuracy                           0.39     99820
+                macro avg       0.39      0.39      0.38     99820
+             weighted avg       0.39      0.39      0.38     99820
+
+
+Confusion Matrix for ./models/knn_model_FastText.joblib:
+[[2205  256  170  231  146  154  119  257  110  111   65  111  354   31
+    49   46   68   41  308  168]
+ [ 181 2594  285  399  160  117   82  128   61  123  139  128   85   42
+    69   53   44   45  117  148]
+ [ 151  347 1543  313  189  118  390  503   58   88  139  135  347  120
+   120  100   49   81  112   97]
+ [ 231  505  322 1530  207  201  125  192  118  201  110  160  132  108
+   115   96   65  113  193  276]
+ [ 163  302  305  315 1482  242   89  151  115  167   90  119   77   31
+   373  140   73  419  171  176]
+ [  61   84   67  108  125 2782   35   97 1080  151   55  103   36   22
+    26   48   15   35   52   18]
+ [ 135  252  892  227  142  109 1192  747   70   75  163  133  217   87
+    96  178   75   64   78   68]
+ [ 331  194  351  188  119  230  424 2037   93  157   57  130  195  211
+    44   28   20   25  117   49]
+ [  70   92   78  112   84 1458   34   95 2278  140   56  105   39   13
+    27   42   30   46   31   29]
+ [ 164  378  194  446  287 1043   77  266  522  722  111  210   72   61
+    61   64   40   55  162   65]
+ [  93  147  120  162  109  208   76  196  129   89 1667  720   80   54
+   142  568  330   64   29   17]
+ [ 101  165  115  169  120  331   76  216  177  158  463 2516   96   34
+    71   58   62   19   42   11]
+ [ 410  117  419  142   79  191  453  667  128  104  106  126 1640  113
+   105   38   29   35   42   56]
+ [  69   92  329  131   83   85  163  370   43   66   42   52  111 3190
+    33   32   20   24   42   23]
+ [ 100  156  284  236  300   85  108  233   51   40  267  139  137   50
+  2280  148   96   82   40  129]
+ [  60   94  121  147  169  175   62   66   77   46  519  128   60   21
+   201 2128  472  393   22   39]
+ [ 182  192  182  215  217  106   93  101   76   69  812  160   75   34
+   136 1003  938  173  193   43]
+ [  59  113  157  152  341   94   46   53   50   34   73   33   50   52
+   113  299   92 3102   39   48]
+ [ 529  375  272  439  387  277   82  183  139  231   40  151   95   53
+    52   54  129   66 1351   95]
+ [ 255  506  227  637  436  162  121  191   99  104   35   64  104   45
+   235   45   35  176  132 1391]]
+KNN (FastText) Accuracy: 0.38637547585654175
+
+Classification Report for ./models/svc_model_FastText.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.55      0.60      0.58      5000
+                  bildung       0.59      0.68      0.63      5000
+   gesellschaft und leben       0.45      0.18      0.26      5000
+               gesundheit       0.46      0.41      0.43      5000
+         klima und umwelt       0.47      0.41      0.44      5000
+      konflikte und krieg       0.47      0.56      0.51      5000
+  kultur und unterhaltung       0.47      0.41      0.44      5000
+                   medien       0.58      0.52      0.55      5000
+                 militaer       0.52      0.54      0.53      4859
+                  politik       0.38      0.28      0.33      5000
+polizei und kriminalitaet       0.46      0.38      0.42      5000
+                    recht       0.53      0.62      0.57      5000
+             social media       0.48      0.53      0.50      5000
+                    sport       0.69      0.88      0.77      5000
+                    tiere       0.64      0.76      0.70      4961
+     unfall und notfaelle       0.48      0.55      0.51      5000
+                  verkehr       0.45      0.30      0.36      5000
+                   wetter       0.64      0.76      0.69      5000
+               wirtschaft       0.48      0.60      0.53      5000
+             wissenschaft       0.49      0.50      0.50      5000
+
+                 accuracy                           0.52     99820
+                macro avg       0.51      0.52      0.51     99820
+             weighted avg       0.51      0.52      0.51     99820
+
+
+Confusion Matrix for ./models/svc_model_FastText.joblib:
+[[3018  150   19   79   60   33   88   95   70   65   56  105  314   53
+    43   27   75   36  398  216]
+ [  97 3413   82  153  120   26  101   43   29  101   82   66   67   57
+    41   28   39   24  178  253]
+ [ 139  330  910  240  175   64  679  243   48   83  124  184  662  257
+   150  108   67  122  212  203]
+ [ 131  283  109 2058   89   64  107   88   73  236   91  133  154  194
+    77   77   52   95  360  529]
+ [  73   85   49   64 2075   66   70   44   40  177   70   97   57   57
+   532  144  122  533  279  366]
+ [  25   61   18   33   83 2783   45   47 1070  246   59   89   55   41
+    12   50   23   28  181   51]
+ [ 104  110  193  158   76   46 2060  489   60   78  152  140  468  140
+    90  220   76   99  109  132]
+ [ 364   72   84   59   35   83  395 2575   57  180   48  116  303  341
+    37   13    7   21  142   68]
+ [  45   15   15   39   21 1352   34   29 2614  231   43  105   57   21
+    21   50   19   43   64   41]
+ [  79  223   60  363  198  744   83  124  504 1421  107  233  112  100
+    32   52   52   47  347  119]
+ [  80  103   43   91   59   75   44   53   62  110 1924  931   91   64
+   151  553  430   50   56   30]
+ [  88   92   20  103   81  208   59   45   82  257  272 3109  105   64
+    82   78   57   28  144   26]
+ [ 450   71   81  105   32   94  246  234   75  140   86  126 2629  227
+   128   48   31   39   77   81]
+ [  15   39   49   41   14   15   39   78   10   28   13   33   97 4390
+    23   19   24   30   24   19]
+ [  34   30   32   64  237   14   38   31   16   27   78   82   76   44
+  3754  104   39   61   40  160]
+ [  25   54   31  130  107  112   40   23   54   43  206   90   61   26
+   179 2750  473  470   43   83]
+ [ 140   72   49   63  152   35   46   19   61   58  703  103   65   66
+   109 1161 1522  178  357   41]
+ [  23   40   25   43  208   21   34   22   17   36   27   19   32   72
+    66  244  106 3790   68  107]
+ [ 335  180  105  114  256   77   49   68   46  143   24  115   51   79
+    40   32  148   52 2981  105]
+ [ 190  331   57  491  362   43  106   62   45   64   13   29   46   48
+   273   28   17  177  100 2518]]
+SVM (FastText) Accuracy: 0.5238829893808856

@@ -1,0 +1,317 @@
+Miniconda is a small version of Anaconda, with python 3.9, https://docs.conda.io/en/latest/miniconda.html
+prepending to __UENV: miniconda3-py39
+prepending to PATH: /opt/miniconda39/bin
+prepending to LD_LIBRARY_PATH: /opt/miniconda39/lib
+prepending to LD_LIBRARY_PATH: /usr/lib64/openmpi/lib
+sourcing environment file /opt/miniconda39/etc/profile.d/conda.sh
+
+
+Requirement already satisfied: matplotlib in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (3.10.1)
+Requirement already satisfied: seaborn in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (0.13.2)
+Requirement already satisfied: scikit-learn in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (1.6.1)
+Requirement already satisfied: contourpy>=1.0.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (1.4.8)
+Requirement already satisfied: numpy>=1.23 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (2.1.3)
+Requirement already satisfied: packaging>=20.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (24.2)
+Requirement already satisfied: pillow>=8 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (11.1.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from matplotlib) (2.9.0.post0)
+Requirement already satisfied: pandas>=1.2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from seaborn) (2.2.3)
+Requirement already satisfied: scipy>=1.6.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (1.15.2)
+Requirement already satisfied: joblib>=1.2.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (1.4.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from scikit-learn) (3.6.0)
+Requirement already satisfied: pytz>=2020.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pandas>=1.2->seaborn) (2025.1)
+Requirement already satisfied: tzdata>=2022.7 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pandas>=1.2->seaborn) (2025.2)
+Requirement already satisfied: six>=1.5 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib) (1.17.0)
+Using TF-IDF vectorization...
+
+Classification Report for ./models/logistic_regression_model_TFIDF.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.58      0.59      0.58      5000
+                  bildung       0.65      0.65      0.65      5000
+   gesellschaft und leben       0.39      0.31      0.35      5000
+               gesundheit       0.49      0.49      0.49      5000
+         klima und umwelt       0.50      0.49      0.49      5000
+      konflikte und krieg       0.53      0.59      0.56      5000
+  kultur und unterhaltung       0.44      0.40      0.42      5000
+                   medien       0.59      0.56      0.58      5000
+                 militaer       0.63      0.60      0.61      4859
+                  politik       0.39      0.36      0.38      5000
+polizei und kriminalitaet       0.47      0.43      0.45      5000
+                    recht       0.58      0.65      0.62      5000
+             social media       0.53      0.55      0.54      5000
+                    sport       0.71      0.81      0.76      5000
+                    tiere       0.67      0.70      0.68      4961
+     unfall und notfaelle       0.52      0.55      0.53      5000
+                  verkehr       0.45      0.39      0.42      5000
+                   wetter       0.71      0.75      0.73      5000
+               wirtschaft       0.48      0.54      0.51      5000
+             wissenschaft       0.52      0.52      0.52      5000
+
+                 accuracy                           0.55     99820
+                macro avg       0.54      0.55      0.54     99820
+             weighted avg       0.54      0.55      0.54     99820
+
+
+Confusion Matrix for ./models/logistic_regression_model_TFIDF.joblib:
+[[2932  125   67   95   51   37   95  128   37   90   71   82  372   56
+    30   27  107   22  364  212]
+ [  91 3230  149  227  109   41  118   48   27  129  105   75   66   53
+    54   18   60   12  168  220]
+ [ 119  187 1574  220  169   58  540  233   25  129  144  149  481  186
+   108   95  101   84  213  185]
+ [ 116  230  194 2455   72   43  102   83   23  254  108   95  107  138
+    72   65   71   54  266  452]
+ [  58   85  119   49 2435   45   76   58   23  174   79   85   34   41
+   393  142  129  405  246  324]
+ [  28   36   35   36   71 2969   57   50  903  309   62   79   48   31
+    16   47   27   13  153   30]
+ [  91   85  422  181   84   38 2006  500   18  113  148  114  385  144
+    74  181  115   63  135  103]
+ [ 293   46  170   82   58   64  345 2794   28  186   44   88  257  277
+    27   11   10   12  141   67]
+ [  31    8   28   40   28 1132   41   28 2936  215   47   87   33   13
+    16   42   24   34   46   30]
+ [  69  160  127  367  175  632  113   99  367 1805  117  210   94   70
+    31   46   66   18  320  114]
+ [  65   81   79   85   61   63   90   54   31  162 2156  728   67   51
+   137  474  499   32   61   24]
+ [  56   67   63   85  106  142   61   57   68  224  329 3270   73   50
+    48   76   70   12  123   20]
+ [ 383   40  201  103   45   69  259  224   65  152   94   99 2748  190
+    81   48   43   25   59   72]
+ [  36   22  169   59   16   29  109  109    2   64   20   31   84 4049
+    30   24   31   24   58   34]
+ [  26   44   89   77  261   17   94   34   10   38  117   91   86   47
+  3458  110   85   51   45  181]
+ [  20   39   56   93  136   57   79   22   24   57  273   77   41   24
+   160 2741  600  398   35   68]
+ [ 102   62  101   83  146   28   95   16   34   77  631  100   50   57
+   111  876 1938  140  313   40]
+ [  32   26   46   47  280   21   46   33   14   42   44   14   38   56
+    64  213  117 3730   57   80]
+ [ 324  136  196  179  210   69  101   76   36  246   30   95   51   87
+    47   26  217   38 2711  125]
+ [ 156  283  115  487  380   44  128   61   21  104   17   30   36   57
+   183   36   29  121  129 2583]]
+LogisticRegression (TF-IDF) Accuracy: 0.54618312963334
+
+Classification Report for ./models/random_forest_model_TFIDF.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.56      0.29      0.38      5000
+                  bildung       0.62      0.57      0.59      5000
+   gesellschaft und leben       0.15      0.13      0.14      5000
+               gesundheit       0.43      0.32      0.37      5000
+         klima und umwelt       0.43      0.21      0.29      5000
+      konflikte und krieg       0.41      0.59      0.49      5000
+  kultur und unterhaltung       0.31      0.09      0.13      5000
+                   medien       0.69      0.26      0.38      5000
+                 militaer       0.63      0.46      0.53      4859
+                  politik       0.35      0.07      0.12      5000
+polizei und kriminalitaet       0.37      0.31      0.33      5000
+                    recht       0.53      0.54      0.53      5000
+             social media       0.36      0.36      0.36      5000
+                    sport       0.53      0.47      0.50      5000
+                    tiere       0.70      0.47      0.56      4961
+     unfall und notfaelle       0.40      0.45      0.42      5000
+                  verkehr       0.39      0.18      0.24      5000
+                   wetter       0.64      0.65      0.64      5000
+               wirtschaft       0.11      0.62      0.18      5000
+             wissenschaft       0.33      0.19      0.24      5000
+
+                 accuracy                           0.36     99820
+                macro avg       0.45      0.36      0.37     99820
+             weighted avg       0.45      0.36      0.37     99820
+
+
+Confusion Matrix for ./models/random_forest_model_TFIDF.joblib:
+[[1435  116  192   95   44  130   50   17   26   23   95  104  434  112
+    14   56   65   40 1820  132]
+ [  42 2834  196  170   98   78   34   15   14    7   97   62   92   62
+    17   38   21   14  938  171]
+ [  64  195  656  162   82  115  134   88   28   17  142  121  274  211
+    65  125   79  134 2165  143]
+ [  40  242  276 1592   56   73   44   22   15   24   98   95  178  127
+    30   91   33   65 1673  226]
+ [  24  123  188   52 1072  178   40    8   14   19  104  155  129  126
+   219  134   90  397 1706  222]
+ [  30   33   79   18   31 2958   14   18  695   68   54  118  120   40
+    14   80   17   15  540   58]
+ [  42  119  388  152   89  157  425  161   16   27  204  104  201  174
+    54  218   55  102 2219   93]
+ [ 200   50  199  108   57  190   59 1323   34   37   51  156  239  222
+    14   49   10   20 1917   65]
+ [  58   16   85   29   16 1323   21   12 2256  100   45   89   76   51
+     8   45    6   30  550   43]
+ [  47  128  215  211   87  747   44   27  236  350  112  160   99  155
+    19   73   32   38 2112  108]
+ [  26   99  185   66   49  113   64   33   26   27 1540  680  180   60
+    86  644  275   45  748   54]
+ [  28   58  171   50   66  221   24   19   50   44  215 2688  187   74
+    33   88   40   11  877   56]
+ [ 193   37  250   91   17  126   55   70   55   58  114   95 1825  141
+    52   79   35   52 1585   70]
+ [  13   39  229   64   14   97   65   38    3   23   29   32  190 2349
+     9   59   21   63 1651   12]
+ [  17   34  178   49  124   81   40   18   13   10  191  124  222   74
+  2310  158   87   83 1029  119]
+ [  14   54  153   66   68  106   44    5   20   14  345   70  135   47
+   109 2250  291  346  725  138]
+ [  28   45  164   37   75   56   69    6   24    9  645  100  172  110
+    68 1136  887  125 1182   62]
+ [  12   30   76   18  156   71   31   14   17    9   47   27  107   68
+    32  171   75 3235  705   99]
+ [ 159   92  212  203   74  229   40   12   24  111   42   99   89  145
+    14   54  121   52 3086  142]
+ [  98  260  223  474  201  122   55    9   23   32   36   34   88   73
+   129   50   29  206 1888  970]]
+RandomForest (TF-IDF) Accuracy: 0.36105990783410136
+
+Classification Report for ./models/xgboost_model_TFIDF.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.61      0.56      0.58      5000
+                  bildung       0.66      0.64      0.65      5000
+   gesellschaft und leben       0.35      0.30      0.32      5000
+               gesundheit       0.47      0.49      0.48      5000
+         klima und umwelt       0.49      0.46      0.48      5000
+      konflikte und krieg       0.52      0.60      0.56      5000
+  kultur und unterhaltung       0.35      0.42      0.38      5000
+                   medien       0.58      0.55      0.56      5000
+                 militaer       0.64      0.60      0.62      4859
+                  politik       0.38      0.35      0.37      5000
+polizei und kriminalitaet       0.43      0.42      0.43      5000
+                    recht       0.56      0.63      0.59      5000
+             social media       0.53      0.51      0.52      5000
+                    sport       0.70      0.74      0.72      5000
+                    tiere       0.69      0.66      0.67      4961
+     unfall und notfaelle       0.50      0.53      0.51      5000
+                  verkehr       0.44      0.38      0.41      5000
+                   wetter       0.70      0.72      0.71      5000
+               wirtschaft       0.44      0.49      0.46      5000
+             wissenschaft       0.50      0.47      0.49      5000
+
+                 accuracy                           0.53     99820
+                macro avg       0.53      0.53      0.53     99820
+             weighted avg       0.53      0.53      0.53     99820
+
+
+Confusion Matrix for ./models/xgboost_model_TFIDF.joblib:
+[[2791  118   80  115   57   52  183   89   34   97   87   85  383   68
+    26   36  110   31  356  202]
+ [  84 3201  187  204  117   36  158   58   19  132  119   63   61   54
+    37   26   48    8  155  233]
+ [ 112  172 1510  251  151   74  596  218   31  133  165  178  406  181
+    97  105  102   97  247  174]
+ [  81  210  214 2465   82   55  193   86   23  241  123  121   88  122
+    57   54   66   49  278  392]
+ [  54   85  135   58 2298   55  152   58   23  203   72  110   41   53
+   375  161  129  374  279  285]
+ [  21   30   42   36   78 3021   62   51  861  255   66  102   43   30
+    10   69   32   14  157   20]
+ [  81   91  419  193   93   55 2086  451   14  124  170  103  348  143
+    74  171   97   56  137   94]
+ [ 267   33  173   97   58   66  370 2729   39  205   55  105  253  235
+    20   27   13   16  167   72]
+ [  12   21   34   35   24 1113   61   30 2924  210   67   86   35   20
+    14   34   19   33   51   36]
+ [  58  126  147  374  158  641  179  119  302 1775  148  192   74   70
+    25   62   48   24  351  127]
+ [  63   95  126   98   72   58  124   73   32  139 2113  682   68   57
+   109  460  489   31   72   39]
+ [  47   61   99  102   98  138  110   52   72  218  362 3145   82   53
+    39   73   67   13  141   28]
+ [ 309   38  267  134   39  102  343  204   61  166  113   98 2574  186
+    89   45   45   33   76   78]
+ [  19   23  205   75   16   47  263  142    4   77   29   45   95 3716
+    31   38   41   34   62   38]
+ [  31   36  123   65  224   30  176   50    6   58  150  108   87   45
+  3271  119   91   48   65  178]
+ [  22   44   78   79  119   55  120   56   21   72  304   83   41   30
+   136 2661  599  365   41   74]
+ [  89   53  106   62  129   36  170   32   30   89  644  105   59   68
+    96  880 1903  119  280   50]
+ [  26   28   61   39  281   26   98   36   16   58   68   28   30   50
+    54  227  110 3595   71   98]
+ [ 283  104  222  227  204   88  218   87   29  298   39  106   62   68
+    40   37  272   41 2427  148]
+ [ 140  271  136  513  351   54  229   87   23   92   31   41   44   58
+   175   56   36  135  166 2362]]
+XGBoost (TF-IDF) Accuracy: 0.5266179122420357
+
+Classification Report for ./models/knn_model_TFIDF.joblib:
+                           precision    recall  f1-score   support
+
+   IT und digitalisierung       0.39      0.35      0.37      5000
+                  bildung       0.16      0.42      0.23      5000
+   gesellschaft und leben       0.12      0.18      0.14      5000
+               gesundheit       0.13      0.25      0.17      5000
+         klima und umwelt       0.15      0.30      0.20      5000
+      konflikte und krieg       0.29      0.37      0.33      5000
+  kultur und unterhaltung       0.12      0.23      0.16      5000
+                   medien       0.31      0.32      0.32      5000
+                 militaer       0.50      0.42      0.46      4859
+                  politik       0.15      0.08      0.11      5000
+polizei und kriminalitaet       0.17      0.13      0.15      5000
+                    recht       0.33      0.31      0.32      5000
+             social media       0.35      0.26      0.30      5000
+                    sport       0.33      0.22      0.26      5000
+                    tiere       0.39      0.33      0.36      4961
+     unfall und notfaelle       0.40      0.18      0.24      5000
+                  verkehr       0.26      0.07      0.11      5000
+                   wetter       0.77      0.35      0.48      5000
+               wirtschaft       0.45      0.07      0.13      5000
+             wissenschaft       0.58      0.14      0.23      5000
+
+                 accuracy                           0.25     99820
+                macro avg       0.32      0.25      0.25     99820
+             weighted avg       0.32      0.25      0.25     99820
+
+
+Confusion Matrix for ./models/knn_model_TFIDF.joblib:
+[[1738  518  287  374  339  157  382  214   47   91  107  140  241  109
+   103   41   33   15   34   30]
+ [ 162 2077  322  440  403  153  385  136   67   94  141  138   95  106
+   127   33   34    8   20   59]
+ [ 165  667  920  499  489  220  546  249   58  123  146  186  269  144
+   154   50   32   19   31   33]
+ [ 134  758  465 1240  411  190  443  170   70  128  138  168  141  137
+   146   56   46   22   42   95]
+ [ 118  596  364  420 1513  192  362  157   69  144  120  132   79  113
+   273   71   39  154   24   60]
+ [  71  449  266  315  313 1873  269  128  651  157   70  132   57   69
+    91   29   21    9   24    6]
+ [ 131  598  540  500  481  195 1136  322   67   92  147  145  201  140
+   130   79   48   11   13   24]
+ [ 257  466  398  345  360  173  511 1616   47  105  104  125  164  142
+    98   23   27    3   22   14]
+ [  69  306  227  270  249  929  230  104 2050   79   45   78   63   51
+    41   20   25   11    9    3]
+ [ 149  718  429  531  489  452  525  214  213  405  164  210  117  138
+   112   34   33    9   33   25]
+ [ 130  649  406  464  495  208  458  185   89  142  638  386   87  125
+   169  168  145   15   25   16]
+ [ 116  497  326  393  405  228  401  150  117  150  298 1564   75   94
+    90   34   30    5   17   10]
+ [ 374  449  488  337  303  173  491  277   80  126  133  136 1315  109
+   113   34   22    9   13   18]
+ [  92  638  404  474  429  189  480  223   65  157  166  162  158 1109
+   130   33   41    8   27   15]
+ [  86  469  334  353  523  154  400  147   56   97  172  147  108  104
+  1647   65   48   11   11   29]
+ [  84  557  319  417  496  176  422  141   64  110  335  173  118  149
+   209  881  182  129   17   21]
+ [ 130  652  386  478  498  201  495  166   79  134  392  194  118  145
+   194  289  341   39   55   14]
+ [  72  396  247  322  582  164  355  140   56   95  131   95  101  115
+   137  152   46 1752   10   32]
+ [ 235  702  404  537  548  269  552  225   76  159  155  207  130  152
+   133   67   58   12  364   15]
+ [ 177  750  375  546  553  188  468  186   54  102  144  169   98  140
+   170   52   38   39   26  725]]
+KNN (TF-IDF) Accuracy: 0.2494890803446203
+Error evaluating SVM (TF-IDF): [Errno 2] No such file or directory: './models/svm_model_TFIDF.joblib'

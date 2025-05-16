@@ -1,0 +1,119 @@
+Miniconda is a small version of Anaconda, with python 3.9, https://docs.conda.io/en/latest/miniconda.html
+prepending to __UENV: miniconda3-py39
+prepending to PATH: /opt/miniconda39/bin
+prepending to LD_LIBRARY_PATH: /opt/miniconda39/lib
+prepending to LD_LIBRARY_PATH: /usr/lib64/openmpi/lib
+sourcing environment file /opt/miniconda39/etc/profile.d/conda.sh
+
+
+Requirement already satisfied: spacy in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (3.8.4)
+Requirement already satisfied: numpy in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (2.1.3)
+Requirement already satisfied: spacy-legacy<3.1.0,>=3.0.11 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (3.0.12)
+Requirement already satisfied: spacy-loggers<2.0.0,>=1.0.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (1.0.5)
+Requirement already satisfied: murmurhash<1.1.0,>=0.28.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (1.0.12)
+Requirement already satisfied: cymem<2.1.0,>=2.0.2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (2.0.11)
+Requirement already satisfied: preshed<3.1.0,>=3.0.2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (3.0.9)
+Requirement already satisfied: thinc<8.4.0,>=8.3.4 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (8.3.4)
+Requirement already satisfied: wasabi<1.2.0,>=0.9.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (1.1.3)
+Requirement already satisfied: srsly<3.0.0,>=2.4.3 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (2.5.1)
+Requirement already satisfied: catalogue<2.1.0,>=2.0.6 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (2.0.10)
+Requirement already satisfied: weasel<0.5.0,>=0.1.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (0.4.1)
+Requirement already satisfied: typer<1.0.0,>=0.3.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (0.15.2)
+Requirement already satisfied: tqdm<5.0.0,>=4.38.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (4.67.1)
+Requirement already satisfied: requests<3.0.0,>=2.13.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (2.32.3)
+Requirement already satisfied: pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (2.11.1)
+Requirement already satisfied: jinja2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (3.1.6)
+Requirement already satisfied: setuptools in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (72.1.0)
+Requirement already satisfied: packaging>=20.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (24.2)
+Requirement already satisfied: langcodes<4.0.0,>=3.2.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from spacy) (3.5.0)
+Requirement already satisfied: language-data>=1.2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from langcodes<4.0.0,>=3.2.0->spacy) (1.3.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy) (0.7.0)
+Requirement already satisfied: pydantic-core==2.33.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy) (2.33.0)
+Requirement already satisfied: typing-extensions>=4.12.2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy) (4.12.2)
+Requirement already satisfied: typing-inspection>=0.4.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy) (0.4.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from requests<3.0.0,>=2.13.0->spacy) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from requests<3.0.0,>=2.13.0->spacy) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from requests<3.0.0,>=2.13.0->spacy) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from requests<3.0.0,>=2.13.0->spacy) (2025.1.31)
+Requirement already satisfied: blis<1.3.0,>=1.2.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from thinc<8.4.0,>=8.3.4->spacy) (1.2.0)
+Requirement already satisfied: confection<1.0.0,>=0.0.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from thinc<8.4.0,>=8.3.4->spacy) (0.1.5)
+Requirement already satisfied: click>=8.0.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from typer<1.0.0,>=0.3.0->spacy) (8.1.8)
+Requirement already satisfied: shellingham>=1.3.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from typer<1.0.0,>=0.3.0->spacy) (1.5.4)
+Requirement already satisfied: rich>=10.11.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from typer<1.0.0,>=0.3.0->spacy) (13.9.4)
+Requirement already satisfied: cloudpathlib<1.0.0,>=0.7.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from weasel<0.5.0,>=0.1.0->spacy) (0.21.0)
+Requirement already satisfied: smart-open<8.0.0,>=5.2.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from weasel<0.5.0,>=0.1.0->spacy) (7.1.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from jinja2->spacy) (3.0.2)
+Requirement already satisfied: marisa-trie>=1.1.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from language-data>=1.2->langcodes<4.0.0,>=3.2.0->spacy) (1.2.1)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy) (3.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy) (2.19.1)
+Requirement already satisfied: wrapt in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from smart-open<8.0.0,>=5.2.1->weasel<0.5.0,>=0.1.0->spacy) (1.17.2)
+Requirement already satisfied: mdurl~=0.1 in /home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages (from markdown-it-py>=2.2.0->rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy) (0.1.2)
+Collecting de-core-news-lg==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/de_core_news_lg-3.8.0/de_core_news_lg-3.8.0-py3-none-any.whl (567.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 567.8/567.8 MB 27.9 MB/s eta 0:00:00
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('de_core_news_lg')
+PATH: /home/stud/ricardor/.local/bin:/home/stud/ricardor/.conda/envs/news_classification/bin:/opt/miniconda39/condabin:/opt/miniconda39/bin:/xu/bin:/home/drift/bin:/opt/uis/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin
+Using spaCy (FastText) embeddings...
+Logistic Regression grid search took  24679.65 seconds
+LogisticRegression Accuracy: 0.5210078140653176
+Random Forest grid search took  2211.25 seconds
+RandomForest Accuracy: 0.42000601081947503
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [20:38:01] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [20:44:02] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [20:50:04] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [20:56:05] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [21:07:33] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [21:18:58] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [21:30:27] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [21:36:24] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [21:42:22] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [21:48:19] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [21:58:58] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [22:09:37] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+/home/stud/ricardor/.conda/envs/news_classification/lib/python3.12/site-packages/xgboost/training.py:183: UserWarning: [22:20:19] WARNING: /workspace/src/learner.cc:738: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+XGBoost grid search took  7021.40 seconds
+XGBoost Accuracy: 0.4999499098377079
+KNN grid search took  4570.75 seconds
+KNN Accuracy: 0.38637547585654175
+LinearSVC grid search took  9216.93 seconds
+LinearSVC Accuracy: 0.5238829893808856
