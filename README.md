@@ -3,20 +3,6 @@
 
 This project aims to classify German news articles into predefined categories using both classical machine learning models (Logistic Regression, Random Forest, XGBoost, KNN, SVM) and transformer-based models (e.g. Distilbert, XLM-RoBERTa). The repository provides scripts for data preprocessing, training, and evaluating models, as well as instructions on how to reproduce results.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Data Preparation](#data-preparation)
-- [Training the Models](#training-the-models)
-  - [Classical Models](#classical-models)
-  - [Transformer-based Models](#transformer-based-models)
-- [Evaluating the Models](#evaluating-the-models)
-- [Inference / Using the Models](#inference--using-the-models)
-- [Customizing the Pipeline](#customizing-the-pipeline)
-
 ## Overview
 
 The project uses:
@@ -29,7 +15,7 @@ The primary goal is to predict the `category` (aggregated category) labels for G
 ```bash
 German-News-Data-Classification/
 ├─ data/
-│  ├─ downsampled_df.parquet
+│  ├─ 
 │  
 │  
 ├─ models/
@@ -39,30 +25,33 @@ German-News-Data-Classification/
 │  ├─ knn_model.joblib
 │  ├─ LinearSVC_model.joblib
 │  ├─ label_encoder.joblib
-│  └─ german_finetuned_model/
+│  └─ german_finetuned_model/ ( all transformer models have their own finetuned)
 │     ├─ config.json
 │     ├─ pytorch_model.bin
 │     ├─ tokenizer.json
 │     ├─ tokenizer_config.json
-│     └─ ... (other tokenizer/model files)
+│     └─ ... ( other tokenizer/model files)
 ├─ src/
 │  ├─ data_preprocessing.py
-|  ├─ dominantWords.py
-|  ├─ embedding.py
-|  ├─ evaluate_transformer_logit.py
-|  ├─ evaluate_transformer_models.py
-|  ├─ evaluate.transformer_wordcloud.py
-|  ├─ plot_distribution.py
-│  ├─ train_classical_models.py
+│  ├─ dominantWords.py
+│  ├─ embedding.py
+│  ├─ evaluate_transformer_logit.py
+│  ├─ evaluate_transformer_models.py
+│  ├─ evaluate.transformer_wordcloud.py
+│  ├─ plot_distribution.py
+│  ├─ train_classical_model.py ( File includes all classical models)
 │  ├─ train_transformer_models.py
 │  ├─ evaluate_models.py
 │  └─ utils.py
-├─ classical_model.sh
+├─ train_classical_model.sh
 ├─ dominantwords.sh
+├─ evaluate_classical_models.sh
 ├─ evaluate_transformer_logit.sh
 ├─ evaluate_transformer.models.sh
 ├─ evaluate_transformer_wordcloud.sh
+├─ logit_analysis.sh
 ├─ news_classification_setup.sh
+├─ plot.sh
 ├─ README.md
 ├─ transformer_model.sh
 └─ requirements.txt
@@ -72,6 +61,7 @@ German-News-Data-Classification/
 - **`src/`**: Source code for data preprocessing, training, and evaluation.
 - **`README.md`**: Documentation and instructions.
 - **`requirements.txt`**: Python dependencies.
+- **`bash scripts`**: These are the files used to run the scripts,.
 
 ## Prerequisites
 
@@ -132,7 +122,7 @@ This will:
 - Convert the data into the Hugging Face Dataset format.
 - Tokenize and prepare inputs for the model.
 - Train the transformer-based model using the Trainer API.
-- Save the fine-tuned model to the appropriate subdirectory inside the `models/`folder.
+- Save the fine-tuned model to the the `models/`folder.
 ### Evaluating the classical Models
 This script evaluates the classical model used.
 
@@ -144,39 +134,22 @@ This script will:
 
 - Load the saved classical models (Logistic Regression, Random Forest, XGBoost, KNN, and LinearSVC).
 - Load and preprocess the test data.
-- Generate document embeddings using FastText-based vectors (via spaCy) enable TF-IDF
+- Generate document embeddings using FastText-based vectors (via spaCy) enable TF-IDF with
 ```bash
 USE_TFIDF = True
 ```
-
 - Evaluate each model's performance and print classification reports and confusion matrices.
 
-## Inference / Using the Models
-After training, you can load models directly for inference. For example, to load and use the transformer model for new text predictions:
+### Suggested using bash script when running the models each bashscript run either on GPU or CPU Use the one you need.
 
-```python
-import torch
-import joblib
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-
-le = joblib.load("./models/label_encoder.joblib")
-model_path = "./models/german_finetuned_model"
-
-tokenizer = AutoTokenizer.from_pretrained(model_path)
-model = AutoModelForSequenceClassification.from_pretrained(model_path)
-model.eval()
-
-texts = ["Dein Beispieltext hier"]
-inputs = tokenizer(texts, return_tensors="pt", truncation=True, padding="max_length", max_length=256)
-with torch.no_grad():
-    outputs = model(**inputs)
-    logits = outputs.logits
-
-predictions = torch.argmax(logits, dim=1).numpy()
-predicted_labels = le.inverse_transform(predictions)
-print(predicted_labels)
-```
 ## Customizing the Pipeline
 - Changing the number of classes: Update **`top_n=30`** in **`train_classical_models.py`** or **`train_transformer_models.py`**.
 - Modifying the transformer model: Change **`model_name`** in **`train_transformer_models.py`** to a different Hugging Face model.
-- Adjusting hyperparameters: Modify TF-IDF parameters, model hyperparameters, or training arguments in the respective scripts.
+- Adjusting hyperparameters: Modify TF-IDF,FastText parameters, model hyperparameters, or training arguments in the respective scripts.
+- Inside train classical model and evaluate classical model, adjust USE_TFIDF=True depending on if you train FastText or TFIDF
+
+## Acknowledgments
+
+This project is built upon and inspired by the work from [German-News-Data-Classification](https://github.com/umarmuaz/German-News-Data-Classification). 
+
+Special thanks to the original author(s) for providing a solid foundation for German news classification.
