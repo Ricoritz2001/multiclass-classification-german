@@ -151,5 +151,4 @@ USE_TFIDF = True
 ## Acknowledgments
 
 This project is built upon and inspired by the work from [German-News-Data-Classification](https://github.com/umarmuaz/German-News-Data-Classification). 
-
-Special thanks to the original author(s) for providing a solid foundation for German news classification.
+Used with permission. Special thanks for allowing continued development and expansion of the original idea.
