@@ -3,7 +3,7 @@
 #SBATCH --partition=gpu
 #SBATCH --time=48:00:00
 #SBATCH --job-name=checkthat_training
-#SBATCH --output=/home/stud/ricardor/bhome/bachelor/German-News-Data-Classification/Output_file/%j.out
+#SBATCH --output=Output_file/%j.out
 
 # Load CUDA and cuDNN modules
 module load cuda/12.2.0 cudnn/8.8.0

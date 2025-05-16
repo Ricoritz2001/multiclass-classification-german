@@ -84,6 +84,12 @@ German-News-Data-Classification/
    pip install -r requirements.txt
    ```
 4. (Optional) To utilize GPU acceleration for training transformer models, ensure you have CUDA and PyTorch GPU version installed.
+
+## Using bash
+
+```bash
+run news_classification_setup.sh first
+```
    
 ## Data Preparation
 Place your data files in the **`data`** directory:
@@ -151,4 +157,4 @@ USE_TFIDF = True
 ## Acknowledgments
 
 This project is built upon and inspired by the work from [German-News-Data-Classification](https://github.com/umarmuaz/German-News-Data-Classification). 
-Used with permission. Special thanks for allowing continued development and expansion of the original idea.
+Used with permission for academic purposes. Special thanks to the original author for their permission.

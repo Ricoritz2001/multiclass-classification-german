@@ -32,7 +32,7 @@ def generate_wordcloud_for_pair(true_label, pred_label, texts, true_labels, pred
     misclassified_texts = [texts[i] for i in indices]
     
     # If texts are already preprocessed in 'text_punc', you can skip cleaning
-    # Here, we simply lowercase them.
+    # Here we simply lowercase them.
     def simple_preprocess(text):
         return text.lower()
     
